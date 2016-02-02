@@ -1,4 +1,4 @@
-# Delete All Entry Versions plugin for Craft
+# Delete All Entry Versions plugin for Craft CMS
 
 This deletes all entry versions, but keeps the current version of each entry, so you can revert back to it.
 
