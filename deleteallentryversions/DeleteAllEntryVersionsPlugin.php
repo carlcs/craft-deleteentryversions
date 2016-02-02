@@ -1,9 +1,6 @@
 <?php
 namespace Craft;
 
-/**
- * Delete All Entry Versions plugin
- */
 class DeleteAllEntryVersionsPlugin extends BasePlugin
 {
     public function getName()
@@ -12,6 +9,11 @@ class DeleteAllEntryVersionsPlugin extends BasePlugin
     }
 
     public function getVersion()
+    {
+        return '1.0.1';
+    }
+
+    public function getSchemaVersion()
     {
         return '1.0';
     }
@@ -26,6 +28,16 @@ class DeleteAllEntryVersionsPlugin extends BasePlugin
         return 'https://github.com/carlcs/craft-deleteallentryversions';
     }
 
+    public function getDocumentationUrl()
+    {
+        return 'https://github.com/carlcs/craft-deleteallentryversions';
+    }
+
+    public function getReleaseFeedUrl()
+    {
+        return 'https://github.com/carlcs/craft-deleteallentryversions/raw/master/releases.json';
+    }
+
     public function getSettingsUrl()
     {
         return 'settings/plugins/deleteallentryversions/index';
@@ -34,7 +46,7 @@ class DeleteAllEntryVersionsPlugin extends BasePlugin
     public function registerCpRoutes()
     {
         return array(
-                        'settings/plugins/deleteallentryversions/index' => 'deleteallentryversions/_settings',
-                );
+            'settings/plugins/deleteallentryversions/index' => 'deleteallentryversions/_settings',
+        );
     }
 }

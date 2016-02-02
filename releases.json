@@ -1,0 +1,18 @@
+[
+  {
+    "version": "1.0.1",
+    "downloadUrl": "https://github.com/carlcs/craft-deleteallentryversions/archive/v1.0.1.zip",
+    "date": "2016-02-02T15:00:00-01:00",
+    "notes": [
+      "[Added] Added Craft 2.5 plugin configurations.",
+    ]
+  },
+  {
+    "version": "1.0",
+    "downloadUrl": "https://github.com/carlcs/craft-deleteallentryversions/archive/v1.0.zip",
+    "date": "2015-07-23T12:00:00-01:00",
+    "notes": [
+      "First release"
+    ]
+  }
+]
