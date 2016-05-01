@@ -10,12 +10,12 @@
 
 {% set content %}
     <form method="post" accept-charset="UTF-8" data-saveshortcut>
-		<input type="hidden" name="action" value="deleteAllEntryVersions/delete">
+        <input type="hidden" name="action" value="deleteAllEntryVersions/delete">
 
-	    <p class="first">{{ 'Backup your Database first! This deletes all entry versions, but keeps the current version of each entry, so you can revert back to it.'|t }}</p>
+        <p class="first">{{ 'Backup your Database first! This deletes all entry versions, but keeps the current version of each entry, so you can revert back to it.'|t }}</p>
 
-		<div class="buttons">
-			<input type="submit" class="btn submit" value="{{ 'Delete Entry Versions'|t }}">
-		</div>
-	</form>
+        <div class="buttons">
+            <input type="submit" class="btn submit" value="{{ 'Delete Entry Versions'|t }}">
+        </div>
+    </form>
 {% endset %}
