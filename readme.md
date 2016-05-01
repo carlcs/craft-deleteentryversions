@@ -4,4 +4,11 @@ This deletes all entry versions, but keeps the current version of each entry, so
 
 ## Installation
 
-To install the plugin, copy the deleteallentryversions/ folder into craft/plugins/. Then go to Settings → Plugins and click the "Install" button next to "Delete All Entry Versions".
+The plugin is available on Packagist and can be installed using Composer. You can also download the [latest release][1] and copy the files into craft/plugins/deleteallentryversions/.
+
+```
+$ composer require carlcs/craft-deleteallentryversions
+```
+
+
+  [1]: https://github.com/carlcs/craft-deleteallentryversions/releases/latest
