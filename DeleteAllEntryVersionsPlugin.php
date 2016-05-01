@@ -10,7 +10,7 @@ class DeleteAllEntryVersionsPlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '1.0.2';
+        return '1.0.3';
     }
 
     public function getSchemaVersion()
@@ -25,7 +25,7 @@ class DeleteAllEntryVersionsPlugin extends BasePlugin
 
     public function getDeveloperUrl()
     {
-        return 'https://github.com/carlcs/craft-deleteallentryversions';
+        return 'https://github.com/carlcs';
     }
 
     public function getDocumentationUrl()

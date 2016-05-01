@@ -1,5 +1,13 @@
 [
   {
+    "version": "1.0.3",
+    "downloadUrl": "https://github.com/carlcs/craft-deleteallentryversions/archive/v1.0.3.zip",
+    "date": "2016-05-01T23:00:00+01:00",
+    "notes": [
+      "[Added] Added support for CSRF Protection."
+    ]
+  },
+  {
     "version": "1.0.2",
     "downloadUrl": "https://github.com/carlcs/craft-deleteallentryversions/archive/v1.0.2.zip",
     "date": "2016-02-02T23:00:00-01:00",
