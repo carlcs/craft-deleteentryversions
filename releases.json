@@ -1,5 +1,14 @@
 [
   {
+    "version": "1.1.0",
+    "downloadUrl": "https://github.com/carlcs/craft-deleteallentryversions/archive/v1.1.0.zip",
+    "date": "2016-06-26T16:00:00+01:00",
+    "notes": [
+      "[Improved] The plugin no longer truncates the `entryversions` table and resaves new versions for each entry. Instead all but the most recent entry versions are deleted.",
+      "[Fixed] Fixed a bug where field content was missing in most recent entry versions."
+    ]
+  },
+  {
     "version": "1.0.3",
     "downloadUrl": "https://github.com/carlcs/craft-deleteallentryversions/archive/v1.0.3.zip",
     "date": "2016-05-01T23:00:00+01:00",
