@@ -7,33 +7,36 @@ class DeleteAllEntryVersionsController extends BaseController
     // =========================================================================
 
     /**
-     * Deletes all entry versions.
+     * Deletes all but the most recent entry versions for each entry.
      *
      * @return null
      */
     public function actionDelete()
     {
         if (craft()->getEdition() >= Craft::Client) {
-            // Delete them all.
-            craft()->db->createCommand()->truncateTable('entryversions');
+            // Get the most recent entry versions for each entry
+            $subQuery = craft()->db->createCommand()
+                ->select('entryId, locale, max(dateCreated) MaxDateCreated')
+                ->from('entryversions')
+                ->group('entryId, locale');
 
-            // Save a new version for all entries' current content, to make it possible to revert back to it.
-            $sections = craft()->sections->getAllSections();
+            $query = craft()->db->createCommand()
+                ->select('e.id')
+                ->from('entryversions e')
+                ->join('('.$subQuery->getText().') AS g', [
+                    'and',
+                    'e.entryId = g.entryId',
+                    'e.locale = g.locale',
+                    'e.dateCreated = g.MaxDateCreated'
+                ]);
 
-            foreach ($sections as $section) {
-                if ($section->enableVersioning) {
-                    $criteria = craft()->elements->getCriteria(ElementType::Entry);
+            $ids = $query->queryColumn();
 
-                    $criteria->sectionId = $section->id;
-                    $criteria->status = null;
-                    $criteria->localeEnabled = null;
-                    $criteria->limit = null;
+            // Delete all other versions
+            $count = craft()->db->createCommand()->delete('entryversions', ['not in', 'id', $ids]);
 
-                    foreach ($criteria as $entry) {
-                        craft()->entryRevisions->saveVersion($entry);
-                    }
-                }
-            }
+            // Update the latest versions’ version number
+            craft()->db->createCommand()->update('entryversions', ['num' => 1]);
         }
 
         $this->redirectToPostedUrl();
