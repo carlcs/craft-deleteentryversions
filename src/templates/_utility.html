@@ -1,0 +1,8 @@
+<form id="delete-entry-versions" class="utility" method="post" accept-charset="UTF-8">
+    <input type="hidden" name="action" value="delete-entry-versions/default/delete">
+    {{ csrfInput() }}
+
+    <div class="buttons first">
+        <input type="submit" class="btn submit" value="{{ "Delete entry versions"|t('delete-entry-versions') }}">
+    </div>
+</form>

@@ -1,9 +1,37 @@
 {
-  "name": "carlcs/craft-deleteallentryversions",
-  "description": "Delete All Entry Versions plugin for Craft CMS",
+  "name": "carlcs/craft-deleteentryversions",
+  "description": "Delete Entry Versions plugin for Craft CMS",
+  "version": "2.0.0",
   "type": "craft-plugin",
+  "keywords": [
+      "utilities",
+      "craftcms"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "carlcs",
+      "homepage": "https://github.com/carlcs"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/carlcs/craft-deleteentryversions/issues?state=open",
+    "source": "https://github.com/carlcs/craft-deleteentryversions",
+    "docs": "https://github.com/carlcs/craft-deleteentryversions",
+    "rss": "https://github.com/carlcs/craft-deleteentryversions/commits/v2.atom"
+  },
   "require": {
-    "composer/installers": "~1.0",
-    "php": ">=5.3.0"
+    "craftcms/cms": "^3.0.0-RC1"
+  },
+  "autoload": {
+    "psr-4": {
+      "carlcs\\deleteentryversions\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Delete Entry Versions",
+    "handle": "delete-entry-versions",
+    "changelogUrl": "https://github.com/carlcs/craft-deleteentryversions/raw/v2/CHANGELOG.md",
+    "downloadUrl": "https://github.com/carlcs/craft-deleteentryversions/archive/v2.zip"
   }
 }
