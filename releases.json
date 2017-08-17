@@ -1,5 +1,13 @@
 [
   {
+     "version": "1.1.1",
+     "downloadUrl": "https://github.com/carlcs/craft-deleteallentryversions/archive/v1.1.1.zip",
+     "date": "2017-08-17T11:00:00+01:00",
+     "notes": [
+       "[Fixed] Removed the restriction where the plugin didn’t work for Craft Personal editions."
+     ]
+   },
+  {
     "version": "1.1.0",
     "downloadUrl": "https://github.com/carlcs/craft-deleteallentryversions/archive/v1.1.0.zip",
     "date": "2017-06-26T16:00:00+01:00",
