@@ -30,12 +30,12 @@ class DeleteAllEntryVersionsPlugin extends BasePlugin
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/carlcs/craft-deleteallentryversions';
+        return 'https://github.com/carlcs/craft-deleteallentryversions/blob/v1/readme.md';
     }
 
     public function getReleaseFeedUrl()
     {
-        return 'https://github.com/carlcs/craft-deleteallentryversions/raw/master/releases.json';
+        return 'https://github.com/carlcs/craft-deleteallentryversions/raw/v1/releases.json';
     }
 
     public function getSettingsUrl()
