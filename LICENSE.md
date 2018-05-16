@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2017 Carl Christian Seelbach
+Copyright (c) Carl Christian Seelbach
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
