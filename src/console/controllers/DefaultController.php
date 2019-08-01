@@ -15,8 +15,6 @@ class DefaultController extends Controller
      */
     public function actionIndex()
     {
-        $this->requirePermission('utility:delete-entry-versions');
-
         // Get the most recent entry versions for each entry
         $subQuery = (new Query())
             ->select('entryId, siteId, max(dateCreated) MaxDateCreated')
