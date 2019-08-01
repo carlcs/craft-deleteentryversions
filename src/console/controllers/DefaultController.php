@@ -4,6 +4,7 @@ namespace carlcs\deleteentryversions\console\controllers;
 use Craft;
 use yii\console\Controller;
 use yii\helpers\Console;
+use craft\db\Query;
 
 class DefaultController extends Controller
 {
