@@ -1,5 +1,5 @@
 <?php
-namespace carlcs\deleteentryversions\controllers;
+namespace carlcs\deleteentryversions\console\controllers;
 
 use Craft;
 use yii\console\Controller;
