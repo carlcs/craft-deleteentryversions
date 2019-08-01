@@ -40,7 +40,9 @@ class DefaultController extends Controller
             ->execute();
 
         if (!$count) {
-            return Craft::t('delete-entry-versions', 'No entry versions exist yet.');
+            echo Craft::t('delete-entry-versions', 'No entry versions exist yet.');
+
+            return false;
         }
 
         // Update the latest versions’ version number
@@ -48,6 +50,8 @@ class DefaultController extends Controller
             ->update('{{%entryversions}}', ['num' => 1])
             ->execute();
 
-        return Craft::t('delete-entry-versions', '{count} entry versions deleted.', ['count' => $count]);
+        echo Craft::t('delete-entry-versions', '{count} entry versions deleted.', ['count' => $count]);
+
+        return true;
     }
 }
