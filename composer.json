@@ -21,7 +21,7 @@
     "rss": "https://github.com/carlcs/craft-deleteentryversions/commits/v2.atom"
   },
   "require": {
-    "craftcms/cms": "^3.0.0"
+    "craftcms/cms": "^3.0.0 <3.2"
   },
   "autoload": {
     "psr-4": {
