@@ -1,4 +1,5 @@
 > **This package has been deprecated**  
+>
 > The plugin has become obsolete with the release of Craft 3.2, which added the [`maxRevisions`](https://docs.craftcms.com/v3/config/config-settings.html#maxrevisions) config setting to limit the number of revisions stored for each element.
 > Craft 3.4 added the [`utils/prune-revisions`](https://github.com/craftcms/cms/blob/develop/CHANGELOG-v3.md#340---2020-01-28) command to delete revisions from the console.
 
@@ -10,7 +11,7 @@ The plugin adds a utility to delete entry versions.
 
 ## Installation
 
-Delete Entry Versions is available in the Plugin Store. You can also install the plugin manually from the command line with the following commands.
+You can install the plugin manually from the command line with the following commands.
 
 ```
 > composer require carlcs/craft-deleteentryversions
